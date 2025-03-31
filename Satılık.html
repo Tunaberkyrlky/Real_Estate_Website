@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Satılık Mülkler</title>
+        <title>Satılık Mülkler - Core Istanbul</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -16,13 +16,198 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <header>
-            <!-- place navbar here -->
+
+            <!-- Navbar -->
+            <nav
+                style="background-color: #cccebd;"
+                class="navbar navbar-expand-sm navbar-light  fixed-top"
+            >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Anasayfa.html">
+                        <img src="img/Core Logo.png" alt="Core Logo" style="width: 120px; margin: 0;">
+                    </a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item navTitle">
+                                <a class="nav-link" href="Satılık.html" aria-current="page"
+                                    >Satılık
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item navTitle">
+                                <a class="nav-link" href="Kiralık.html" aria-current="page"
+                                    >Kiralık
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTitle" href="EvSahibi.html" aria-current="page"
+                                    >Ev Sahibi
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                        
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link navTitle dropdown-toggle"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >Kurumsal</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href="#"
+                                        >Hakkımızda</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Ekibimiz</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTitle" href="Blog.html" aria-current="page"
+                                    >Blog
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTitle" href="İletişim.html" aria-current="page"
+                                    >İletişim
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            <input
+                                class="form-control me-sm-2"
+                                type="text"
+                                placeholder="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success my-2 my-sm-0"
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+
         </header>
-        <main></main>
+
+        <main id="for-sale">
+            <div class="page-title">
+                <h1>Satılık Mülkler</h1>
+            </div>
+
+            <div class="content-container">
+               <div id="content-item-id" class="content-item card">
+                <div class="left-side">
+                    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li
+                                data-bs-target="#carouselId"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="First slide"
+                            ></li>
+                            <li
+                                data-bs-target="#carouselId"
+                                data-bs-slide-to="1"
+                                aria-label="Second slide"
+                            ></li>
+                            <li
+                                data-bs-target="#carouselId"
+                                data-bs-slide-to="2"
+                                aria-label="Third slide"
+                            ></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img
+                                    src="holder.js/900x500/auto/#777:#555/text:First slide"
+                                    class="w-100 d-block"
+                                    alt="First slide"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="holder.js/900x500/auto/#666:#444/text:Second slide"
+                                    class="w-100 d-block"
+                                    alt="Second slide"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="holder.js/900x500/auto/#666:#444/text:Third slide"
+                                    class="w-100 d-block"
+                                    alt="Third slide"
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselId"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselId"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="right-side">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+                <img class="card-img-top" src="holder.js/100x180/" alt="Title" />
+              
+               </div>
+               
+               
+               
+                
+            </div>
+        </main>
+
         <footer>
             <!-- place footer here -->
         </footer>
