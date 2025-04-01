@@ -40,18 +40,44 @@
 }
 
 .content-item-card {
+    display: flex;
     border-radius: 16px;
     border-color: blueviolet;
     margin-bottom: 40px;
     position: relative;
     margin: 32px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.content-item-card .left-side,
+.content-item-card .right-side {
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    
+}
+
+
+
+.carousel-container{
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    height: 100%;
+    width:50vh;
+    object-fit: cover;
 }
 
 .carousel-container img{
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-    height: max-content;
+    height: 250px; 
+
 }
 
-
-
+#main-container{
+    display: block;
+    margin-right: 70px;
+    margin-left: 70px;
+}

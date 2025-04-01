@@ -124,28 +124,65 @@
                 <h1>Satılık Mülkler</h1>
             </div>
 
-            <div class="content-container container  mx-auto">
-               
-                <div class="content-item-card col-md-12 card ">
-                    <div class="row ">
-                  <!-- Sol Taraf: Carousel -->
-            
-                        <div class="left-side col-md-6 pe-5">
-                            <div class="carousel-container">
-                                <div id="listingCarousel1" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                            <!-- Carousel item'ları, dinamik olarak doldurulacak -->
-                                        <div class="carousel-item active">
-                                        <img src="portfolios\for-sale\Garanti Koza\IMG_0627.JPG" class="d-block w-100" alt="İlan Görseli">
-                                        </div>
-                                        <div class="carousel-item ">
-                                            <img src="portfolios\for-sale\Garanti Koza\IMG_0643.JPG" class="d-block w-100" alt="İlan Görseli">
-                                        </div>
-                                        <div class="carousel-item ">
-                                            <img src="portfolios\for-sale\Garanti Koza\IMG_0662.JPG" class="d-block w-100" alt="İlan Görseli">
-                                        </div>
-                                        <!-- Diğer carousel item'ları (örneğin: images/daire2.jpg, images/daire3.jpg) -->
+            <div id="main-container" class="container mt-5 ">
+                <div class="row">
+                    <!-- Filter Container -->
+                    <div class="col-md-3 filter-container">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Filtreler</h5>
+                                <form>
+                                    <!-- Price Range -->
+                                    <div class="mb-3">
+                                        <label for="priceRange" class="form-label">Fiyat Aralığı</label>
+                                        <input type="text" class="form-control" id="priceRange" placeholder="Örn: 500.000 - 1.000.000">
                                     </div>
+                                    <!-- Location -->
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Lokasyon</label>
+                                        <select class="form-select" id="location">
+                                            <option selected>Seçiniz</option>
+                                            <option value="1">İstanbul</option>
+                                            <option value="2">Ankara</option>
+                                            <option value="3">İzmir</option>
+                                        </select>
+                                    </div>
+                                    <!-- Room Count -->
+                                    <div class="mb-3">
+                                        <label for="roomCount" class="form-label">Oda Sayısı</label>
+                                        <select class="form-select" id="roomCount">
+                                            <option selected>Seçiniz</option>
+                                            <option value="1">1+1</option>
+                                            <option value="2">2+1</option>
+                                            <option value="3">3+1</option>
+                                            <option value="4">4+1</option>
+                                        </select>
+                                    </div>
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn btn-primary w-100">Filtrele</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Container -->
+                    <div class="col-md-9 content-container">
+                        <!-- Existing content-container content -->
+                        <div class="content-item-card card d-flex flex-row">
+                            <div class="left-side me-1">
+                                <div class="carousel-container">
+                                    <div id="listingCarousel1" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="portfolios/for-sale/Garanti Koza/IMG_0627.JPG" class="d-block" alt="İlan Görseli">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="portfolios/for-sale/Garanti Koza/IMG_0643.JPG" class="d-block" alt="İlan Görseli">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="portfolios/for-sale/Garanti Koza/IMG_0662.JPG" class="d-block" alt="İlan Görseli">
+                                            </div>
+                                        </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#listingCarousel1" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Önceki</span>
@@ -154,76 +191,22 @@
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Sonraki</span>
                                         </button>
+                                    </div>
                                 </div>
                             </div>
-                            
-                        </div>
-              
-                  <!-- Sağ Taraf: İlan Detayları -->
-                        <div class="right-side col-md-6 ">
-                            <div class="card-body">
-                            <h5 class="card-title">İlan Başlığı</h5>
-                            <p class="card-text">Burada ilan açıklaması yer alacak. İlanın genel özellikleri hakkında kısa bilgi.</p>
-                            <p class="card-text"><small class="text-muted">Fiyat: 1.500.000 TL</small></p>
-                            <p class="card-text"><small class="text-muted">Lokasyon: İstanbul, Beşiktaş</small></p>
-                            <p class="card-text"><small class="text-muted">Metrekare: 120.5 m² - Oda sayısı: 3</small></p>
-                            <p class="card-text"><small class="text-muted">İlan Tarihi: 2025-03-30</small></p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div class="content-item-card col-md-10 justify-content-center card ">
-                    <div class="row ">
-                  <!-- Sol Taraf: Carousel -->
-            
-                        <div class="left-side col-md-4">
-                            <div id="listingCarousel1" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                        <!-- Carousel item'ları, dinamik olarak doldurulacak -->
-                                    <div class="carousel-item active">
-                                    <img src="portfolios\for-sale\Garanti Koza\IMG_0627.JPG" class="d-block w-100" alt="İlan Görseli">
-                                    </div>
-                                    <div class="carousel-item ">
-                                        <img src="portfolios\for-sale\Garanti Koza\IMG_0643.JPG" class="d-block w-100" alt="İlan Görseli">
-                                    </div>
-                                    <div class="carousel-item ">
-                                        <img src="portfolios\for-sale\Garanti Koza\IMG_0662.JPG" class="d-block w-100" alt="İlan Görseli">
-                                    </div>
-                                    <!-- Diğer carousel item'ları (örneğin: images/daire2.jpg, images/daire3.jpg) -->
+                           
+                            <div class="right-side ">
+                                <div class="card-body">
+                                    <h5 class="card-title">KÖY 1+1 Live and Work</h5>
+                                    <p class="card-text"><small class="text-muted">Fiyat: 1.500.000 TL</small></p>
+                                    <p class="card-text"><small class="text-muted">Lokasyon: İstanbul, Beşiktaş</small></p>
+                                    <p class="card-text"><small class="text-muted">Metrekare: 120.5 m² - Oda sayısı: 3</small></p>
+                                    <p class="card-text"><small class="text-muted">İlan Tarihi: 2025-03-30</small></p>
                                 </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#listingCarousel1" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Önceki</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#listingCarousel1" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Sonraki</span>
-                                    </button>
                             </div>
                         </div>
-              
-                  <!-- Sağ Taraf: İlan Detayları -->
-                        <div class="right-side col-md-8">
-                            <div class="card-body">
-                            <h5 class="card-title">İlan Başlığı</h5>
-                            <p class="card-text">Burada ilan açıklaması yer alacak. İlanın genel özellikleri hakkında kısa bilgi.</p>
-                            <p class="card-text"><small class="text-muted">Fiyat: 1.500.000 TL</small></p>
-                            <p class="card-text"><small class="text-muted">Lokasyon: İstanbul, Beşiktaş</small></p>
-                            <p class="card-text"><small class="text-muted">Metrekare: 120.5 m² - Oda sayısı: 3</small></p>
-                            <p class="card-text"><small class="text-muted">İlan Tarihi: 2025-03-30</small></p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-               
-
-                
-                
             </div>
         </main>
 
