@@ -28,7 +28,9 @@
     justify-content: center !important;
 }
 
-
+.content-container{
+    justify-content: center;
+}
 
 .page-title h1{
     font-weight: 500;
@@ -37,6 +39,19 @@
     color: #5e695b;
 }
 
-.content-item {
-    flex-direction: row;
+.content-item-card {
+    border-radius: 16px;
+    border-color: blueviolet;
+    margin-bottom: 40px;
+    position: relative;
+    margin: 32px;
 }
+
+.carousel-container img{
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    height: max-content;
+}
+
+
+
