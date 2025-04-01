@@ -6,7 +6,7 @@ const listings = [
       price: 13000000,
       location: "İstanbul, Sarıyer/Zekeriyaköy",
       area: 70,
-      room_count: 1+1,
+      room_count: "1+1",
       bathroom_count: 1,
       category: "Satılık",
       created_at: "2025-03-30T10:00:00Z",
@@ -31,8 +31,8 @@ const listings = [
       price: 44500000,
       location: "İstanbul, Sarıyer/Zekeriyaköy",
       area: 485,
-      room_count: 6+2,
-      bathroom_count: 4,
+      room_count: "6+2",
+      bathroom_count: "4",
       category: "Satılık",
       created_at: "2025-03-29T12:00:00Z",
       images: [
@@ -57,8 +57,8 @@ const listings = [
       price: 52000000,
       location: "İstanbul, Sarıyer/Zekeriyaköy",
       area: 338,
-      room_count: 5+2,
-      bathroom_count: 4,
+      room_count: "5+2",
+      bathroom_count: "4",
       category: "Satılık",
       created_at: "2025-03-28T09:30:00Z",
       images: [
@@ -71,6 +71,24 @@ const listings = [
         "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2908.jpg",
         "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2913.jpg",
         "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2928.jpg"
+    ]
+    },
+    {
+      id: 4,
+      title: "KÖY Bahçe Dubleks",
+      description: "Kapsamlı yaşam olanakları sunan müstakil villamız, KÖY sitesinin zengin sosyal olanakları ile kusursuz bir yaşam alanı sunuyor.",
+      price: 52000000,
+      location: "İstanbul, Sarıyer/Zekeriyaköy",
+      area: 338,
+      room_count: "5+2",
+      bathroom_count: "4",
+      category: "Satılık",
+      created_at: "2025-03-28T09:30:00Z",
+      images: [
+        "portfolios/for-sale/Köy 3+1 Bahçe Dubleks/DJI_20221229_164446_419.jpg",
+        "portfolios/for-sale/Köy 3+1 Bahçe Dubleks/DJI_20221229_164511_169.jpg",
+        "portfolios/for-sale/Köy 3+1 Bahçe Dubleks/DJI_20221229_164524_458.jpg",
+        
     ]
     }
   ];
@@ -171,10 +189,7 @@ function createContentItemCard(listing) {
 
 console.log("hello world")
 
-let newCard = createContentItemCard(listings[0]);
-
-contentContainer.appendChild(newCard);
-
-content_container.appendChild(
-  
-)
+for (let i = 0; i < listings.length; i++) {
+    let newCard = createContentItemCard(listings[i]);
+    contentContainer.appendChild(newCard);
+}
