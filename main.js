@@ -1,7 +1,7 @@
 const listings = [
     {
       id: 1,
-      title: "KÖY 1+1 Live and Work",
+      title: "KÖY Live and Work",
       description: "Köy projesinin en gözde etaplarından, yaşam alanları ile ofis ortamlarını beraber sunan Live and Work etabında modern tasarımlı balkonlu 1+1 daire.",
       price: 13000000,
       location: "İstanbul, Sarıyer/Zekeriyaköy",
@@ -52,7 +52,7 @@ const listings = [
     },
     {
       id: 3,
-      title: "KÖY 3C 5+2 Villa",
+      title: "KÖY 3C Villa",
       description: "Kapsamlı yaşam olanakları sunan müstakil villamız, KÖY sitesinin zengin sosyal olanakları ile kusursuz bir yaşam alanı sunuyor.",
       price: 52000000,
       location: "İstanbul, Sarıyer/Zekeriyaköy",
@@ -62,15 +62,15 @@ const listings = [
       category: "Satılık",
       created_at: "2025-03-28T09:30:00Z",
       images: [
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2896.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2897.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2898.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2899.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2900.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2901.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2908.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2913.jpg",
-        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IM/I2928.jpg"
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2896.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2897.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2898.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2899.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2900.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2901.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2908.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2913.jpg",
+        "portfolios/for-sale/KÖY 3- C VİLLA 5+2/IMG_2928.jpg"
     ]
     },
     {
@@ -104,11 +104,11 @@ let contentContainer = document.querySelector(".content-container");
 function createContentItemCard(listing) {
   // Create the card container
   let card = document.createElement("div");
-  card.className = "content-item-card card d-flex flex-row";
+  card.className = "content-item-card card d-flex flex-row mb-3";
 
   // Create the left-side (carousel-container)
   let leftSide = document.createElement("div");
-  leftSide.className = "left-side me-1";
+  leftSide.className = "left-side col-md-6 col-sm-12";
 
   let carouselContainer = document.createElement("div");
   carouselContainer.className = "carousel-container";
@@ -165,17 +165,17 @@ function createContentItemCard(listing) {
 
   // Create the right-side (details)
   let rightSide = document.createElement("div");
-  rightSide.className = "right-side";
+  rightSide.className = "right-side col-md-6 col-sm-12";
 
   let cardBody = document.createElement("div");
   cardBody.className = "card-body";
 
   cardBody.innerHTML = `
     <h5 class="card-title">${listing.title}</h5>
-    <p class="card-text"><small class="text-muted">Fiyat: ${listing.price.toLocaleString()} TL</small></p>
-    <p class="card-text"><small class="text-muted">Lokasyon: ${listing.location}</small></p>
-    <p class="card-text"><small class="text-muted">Metrekare: ${listing.area} m² - Oda sayısı: ${listing.room_count}</small></p>
-    <p class="card-text"><small class="text-muted">İlan Tarihi: ${new Date(listing.created_at).toLocaleDateString()}</small></p>
+    <p class="card-text"><small class="text-muted">${listing.price.toLocaleString()} TL</small></p>
+    <p class="card-text"><small class="text-muted">${listing.location}</small></p>
+    <p class="card-text"><small class="text-muted"> ${listing.area} m² - ${listing.room_count}</small></p>
+    <p class="card-text"><small class="text-muted"> ${new Date(listing.created_at).toLocaleDateString()}</small></p>
   `;
 
   rightSide.appendChild(cardBody);
@@ -193,3 +193,7 @@ for (let i = 0; i < listings.length; i++) {
     let newCard = createContentItemCard(listings[i]);
     contentContainer.appendChild(newCard);
 }
+
+
+
+
