@@ -12,12 +12,25 @@ body{
 
 }
 
+.prominent-listings-container{
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .prominent-listings-row{
     display: grid;
     grid-template-columns: 
-    1fr 1fr 1fr;
+        repeat(auto-fit, minmax(250px, 1fr));
     gap: 16px;
-    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.horizontal-listing-card{
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
 }
 .sidebar {
     grid-area: sidebar;
@@ -122,7 +135,8 @@ body{
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     height: 100%;
-    width: 80%;
+    width: 100%;
+
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -131,9 +145,8 @@ body{
 .carousel-container img{
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-    height: 250px; 
-    width: auto;
-
+    width: fit-content;
+    max-height: 300px;
 }
 
 
