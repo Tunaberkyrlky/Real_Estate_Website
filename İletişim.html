@@ -121,88 +121,97 @@
         </header>
         <main id="contact">
             
-            <div class="container mt-5 pt-5">
-                <h1 class="text-center">Bize Ulaşın</h1>
-                <p class="text-center">Sorularınız için bizimle iletişime geçin.</p>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <form action="#" method="POST" class="bg-light p-4 rounded shadow-sm">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Adınız</label>
-                                <input type="text" class="form-control" id="name" name="name" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">E-posta</label>
-                                <input type="email" class="form-control" id="email" name="email" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mesajınız</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <!-- Button to Open the Modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                                Gönder
-                            </button>
-                            
-                            <!-- The Modal -->
-                            <div class="modal" id="myModal">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                            
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                    <h4 class="modal-title">Mesajınız Gönderildi</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                    </div>
-                            
-                                    <!-- Modal body -->
-                                    <div class="modal-body justify-content-center">
-                                    E-posta adresinize bir onay e-postası gönderildi. Lütfen e-postanızı kontrol edin.
-                                    <br>
-                                    <br>
-                                    En kısa sürede sizinle iletişime geçeceğiz.
-                                    </div>
-                            
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                    </div>
-                            
+            <section class="container row mt-5 pt-5 align-items-center">
+
+                <div class="container-fluid col-8 mt-5">
+                    <h1 class="text-center">Bize Ulaşın</h1>
+                    <p class="text-center">Sorularınız için bizimle iletişime geçin.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form action="#" method="POST" class="bg-light p-4 rounded shadow-sm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Adınız</label>
+                                    <input type="text" class="form-control" id="name" name="name" required />
                                 </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-posta</label>
+                                    <input type="email" class="form-control" id="email" name="email" required />
                                 </div>
-                            </div>
-                        </form>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mesajınız</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                    Gönder
+                                </button>
+                                
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                        <h4 class="modal-title">Mesajınız Gönderildi</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                
+                                        <!-- Modal body -->
+                                        <div class="modal-body justify-content-center">
+                                            <div class="alert alert-success">
+                                                <strong>E-posta adresinize bir onay e-postası gönderildi!</strong> Lütfen e-postanızı kontrol edin..
+                                            </div>
+                                         
+                                        <br>
+                                        <br>
+                                        En kısa sürede sizinle iletişime geçeceğiz.
+                                        </div>
+                                        
+                                
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                
+                                    </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="container col-4  mt-5">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">İletişim Türü</th>
+                                <th scope="col">Detay</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Telefon</td>
+                                <td>+90 212 123 45 67</td>
+                            </tr>
+                            <tr>
+                                <td>E-posta</td>
+                                <td>info@coreistanbul.com</td>
+                            </tr>
+                            <tr>
+                                <td>Adres</td>
+                                <td>İstanbul, Türkiye</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
 
 
-            <div
-                class="table-responsive"
-            >
-                <table
-                    class="table table-primary"
-                >
-                    <thead>
-                        <tr>
-                            <th scope="col">Column 1</th>
-                            <th scope="col">Column 2</th>
-                            <th scope="col">Column 3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="">
-                            <td scope="row">R1C1</td>
-                            <td>R1C2</td>
-                            <td>R1C3</td>
-                        </tr>
-                        <tr class="">
-                            <td scope="row">Item</td>
-                            <td>Item</td>
-                            <td>Item</td>
-                        </tr>
-                    </tbody>
-                </table>
+            
             </div>
             
         </main>

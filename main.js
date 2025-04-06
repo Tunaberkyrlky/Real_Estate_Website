@@ -282,5 +282,104 @@ if (forRentContentContainer) {
   console.error("forRentContentContainer not found in the DOM.");
 }
 
+// Select the prominent-listings-row container
+let prominentListingsContainer = document.querySelector(".prominent-listings-row");
 
+// Function to create a prominent listing card
+function createProminentListingCard(listing) {
+  // Create the card container
+  let card = document.createElement("div");
+  card.className = "card horizontal-listing-card";
+
+  // Create the carousel container
+  let carouselContainer = document.createElement("div");
+  carouselContainer.className = "carousel-container";
+
+  let carousel = document.createElement("div");
+  carousel.id = `listingCarousel${listing.id}`;
+  carousel.className = "carousel slide";
+  carousel.setAttribute("data-bs-ride", "carousel");
+
+  let carouselInner = document.createElement("div");
+  carouselInner.className = "carousel-inner";
+
+  // Add images to the carousel
+  listing.images.forEach((image, index) => {
+    let carouselItem = document.createElement("div");
+    carouselItem.className = `carousel-item ${index === 0 ? "active" : ""}`;
+
+    let img = document.createElement("img");
+    img.src = image;
+    img.className = "d-block w-100";
+    img.alt = "İlan Görseli";
+
+    carouselItem.appendChild(img);
+    carouselInner.appendChild(carouselItem);
+  });
+
+  // Add carousel controls
+  let prevButton = document.createElement("button");
+  prevButton.className = "carousel-control-prev";
+  prevButton.type = "button";
+  prevButton.setAttribute("data-bs-target", `#listingCarousel${listing.id}`);
+  prevButton.setAttribute("data-bs-slide", "prev");
+  prevButton.innerHTML = `
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Önceki</span>
+  `;
+
+  let nextButton = document.createElement("button");
+  nextButton.className = "carousel-control-next";
+  nextButton.type = "button";
+  nextButton.setAttribute("data-bs-target", `#listingCarousel${listing.id}`);
+  nextButton.setAttribute("data-bs-slide", "next");
+  nextButton.innerHTML = `
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Sonraki</span>
+  `;
+
+  // Append carousel elements
+  carousel.appendChild(carouselInner);
+  carousel.appendChild(prevButton);
+  carousel.appendChild(nextButton);
+  carouselContainer.appendChild(carousel);
+
+  // Create the card body
+  let cardBody = document.createElement("div");
+  cardBody.className = "card-body row";
+
+  // Left-aligned content
+  let leftContent = document.createElement("div");
+  leftContent.className = "col-8";
+  leftContent.innerHTML = `
+    <h5 class="card-title">${listing.title}</h5>
+    <hr>
+    <p class="card-text">${listing.location}</p>
+    <p class="card-text"><small class="text-muted">${listing.area} m² - ${listing.room_count}</small></p>
+  `;
+
+  // Right-aligned content
+  let rightContent = document.createElement("div");
+  rightContent.className = "col-4 text-end";
+  rightContent.innerHTML = `
+    <span class="badge bg-secondary">${listing.price.toLocaleString()} TL</span>
+    <p class="card-text"><small class="text-muted">${new Date(listing.created_at).toLocaleDateString()}</small></p>
+  `;
+
+  // Append content to card body
+  cardBody.appendChild(leftContent);
+  cardBody.appendChild(rightContent);
+
+  // Append carousel and card body to the card
+  card.appendChild(carouselContainer);
+  card.appendChild(cardBody);
+
+  return card;
+}
+
+// Add only the first 3 listings to the prominent-listings-container
+listings.slice(0, 3).forEach((listing) => {
+  let newCard = createProminentListingCard(listing);
+  prominentListingsContainer.appendChild(newCard);
+});
 
