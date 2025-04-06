@@ -87,6 +87,19 @@ body{
     padding: 16px;
     border-radius: 16px;
 }
+
+@media (max-width: 768px) {
+    .layout {
+        width: 100%;
+      
+        display: grid;
+        grid-template-areas: 
+            "body"
+            "body";
+        gap: 8px;
+    }
+}
+
 .body { 
     grid-area: body; 
 }
@@ -170,4 +183,8 @@ body{
 #main-container{
     margin-right: 70px;
     margin-left: 70px;
+}
+
+.card-text{
+    white-space: nowrap;
 }
