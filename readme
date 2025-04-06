@@ -1,6 +1,8 @@
 #Project Info
-
-Core Real Estate project is a responsive bootstrap website exercise project. Project has inspired from this website:
+Bootstrap Website Exercise Project
+Core Istanbul is a luxury real estate website designed to showcase premium properties for sale and rent.
+The website is fully responsive and optimized for both desktop and mobile devices.
+Project has inspired from this website:
 
 https://www.spaceistanbul.com/
 
@@ -8,6 +10,11 @@ https://www.spaceistanbul.com/
 
 ![HomePage](https://github.com/user-attachments/assets/d4c90f7f-f433-4353-b377-46d0f1a63409)
 ![ForSalePage](https://github.com/user-attachments/assets/dac19e84-2801-4761-a24b-03ee4933da61)
+
+#Functionality
+
+Property data is dynamically loaded from a JavaScript object (listings) and displayed on the relevant pages.
+
 
 #Tech Stack
 
@@ -23,26 +30,6 @@ https://www.w3schools.com/css/default.asp
 https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
 https://www.youtube.com/watch?v=x4u1yp3Msao&t=60s
-
-Vs Copilot (some js codes and bug fixing)
-
-
-#Components and Their Locations
-
-Container: *
-Grid System: *
-Collapse: Navbar
-Navbar: *
-Tables: İletişim.html
-Carousel: Listing photos
-Modal: İletişim.html > Gönder Button
-Alert: İletişim.html > Gönder Button
-Offcanvas: Evsahibi.html
-Cards: *
-Badges: Anasayfa.html prominent-listings
-Images: *
-Colors: *
-Margin & Padding *
 
 
 #Author
