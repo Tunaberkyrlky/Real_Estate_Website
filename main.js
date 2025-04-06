@@ -92,31 +92,6 @@ const listings = [
     ]
     },
     {
-      id: 5,
-      title: "KÖY Live and Work",
-      description: "Köy projesinin en gözde etaplarından, yaşam alanları ile ofis ortamlarını beraber sunan Live and Work etabında modern tasarımlı balkonlu 1+1 daire.",
-      price: 50000,
-      location: "İstanbul, Sarıyer/Zekeriyaköy",
-      area: 70,
-      room_count: "1+1",
-      bathroom_count: 1,
-      category: "Kiralık",
-      created_at: "2025-03-30T10:00:00Z",
-      images: [
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1511.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1512.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1513.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1514.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1515.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1518.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1519.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_1520.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_4424.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_4427.jpeg",
-        "portfolios/for-sale/KÖY 1+1 Live and Work/IMG_4430.jpeg"
-      ]
-    },
-    {
       id: 6,
       title: "Garanti Koza",
       description: "Doğayla iç içe bir yaşam için doğru adres olan Zekeriyaköy'deki bu evin 905 m2 bahçe içerisinde; otomatik sulama sistemi, jeneratörü ve su kuyusu bulunmaktadır.",

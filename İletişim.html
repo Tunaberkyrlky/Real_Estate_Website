@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Bizimle İletişime Geçin</title>
+        <title>Bizimle İletişime Geçin | Luxury Real Estate</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
+        <meta name="description" content="Yeni evinize giden ilk adımı Core İstanbul ile atın! Kiralık ve satılık mülk ilanları için sayfamıza davetlisiniz.">
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -16,15 +17,201 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body>
+    <body id="home-body" class="bg-light">
         <header>
-            <!-- place navbar here -->
+
+            <!-- Navbar -->
+            <nav
+                style="background-color: #f6f6f6;"
+                class="navbar navbar-expand-sm navbar-light  fixed-top"
+            >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Anasayfa.html">
+                        <img src="img/Core Logo.png" alt="Core Logo" style="width: 120px; margin: 0;">
+                    </a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item navTitle">
+                                <a class="nav-link" href="Satılık.html" aria-current="page"
+                                    >Satılık
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item navTitle">
+                                <a class="nav-link" href="Kiralık.html" aria-current="page"
+                                    >Kiralık
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item  navTitle">
+                                <a class="nav-link" href="EvSahibi.html" aria-current="page"
+                                    >Ev Sahibi
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                        
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link navTitle dropdown-toggle"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >Kurumsal</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href="#"
+                                        >Hakkımızda</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Ekibimiz</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTitle" href="Blog.html" aria-current="page"
+                                    >Blog
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTitle" href="İletişim.html" aria-current="page"
+                                    >İletişim
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            <input
+                                class="form-control me-sm-2"
+                                type="text"
+                                placeholder="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success my-2 my-sm-0"
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+
         </header>
-        <main></main>
+        <main id="contact">
+            
+            <div class="container mt-5 pt-5">
+                <h1 class="text-center">Bize Ulaşın</h1>
+                <p class="text-center">Sorularınız için bizimle iletişime geçin.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form action="#" method="POST" class="bg-light p-4 rounded shadow-sm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Adınız</label>
+                                <input type="text" class="form-control" id="name" name="name" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-posta</label>
+                                <input type="email" class="form-control" id="email" name="email" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mesajınız</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Gönder
+                            </button>
+                            
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Mesajınız Gönderildi</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body justify-content-center">
+                                    E-posta adresinize bir onay e-postası gönderildi. Lütfen e-postanızı kontrol edin.
+                                    <br>
+                                    <br>
+                                    En kısa sürede sizinle iletişime geçeceğiz.
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table table-primary"
+                >
+                    <thead>
+                        <tr>
+                            <th scope="col">Column 1</th>
+                            <th scope="col">Column 2</th>
+                            <th scope="col">Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row">R1C1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                        </tr>
+                        <tr class="">
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </main>
+
+
         <footer>
-            <!-- place footer here -->
+            <div style="height: 250px;" class="bg-light d-flex flex-column justify-content-center align-items-center">
+                copyright &copy; 2023 Core Istabbul. Tüm hakları saklıdır.
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
