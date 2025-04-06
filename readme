@@ -1,0 +1,48 @@
+#Project Info
+
+Core Real Estate project is a responsive bootstrap website exercise project. Project has inspired from this website:
+
+https://www.spaceistanbul.com/
+
+
+#Tech Stack
+
+HTML, CSS, Bootstrap and JavaScript
+
+
+#Sources used in this project
+
+https://www.w3schools.com/bootstrap5/index.php
+
+https://www.w3schools.com/css/default.asp
+
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+https://www.youtube.com/watch?v=x4u1yp3Msao&t=60s
+
+Vs Copilot (some js codes and bug fixing)
+
+
+#Components and Their Locations
+
+Container: *
+Grid System: *
+Collapse: Navbar
+Navbar: *
+Tables: İletişim.html
+Carousel: Listing photos
+Modal: İletişim.html > Gönder Button
+Alert: İletişim.html > Gönder Button
+Offcanvas: Evsahibi.html
+Cards: *
+Badges: Anasayfa.html prominent-listings
+Images: *
+Colors: *
+Margin & Padding *
+
+
+#Author
+
+##Tunaberk Yerlikaya
+##tunaberk.yerlikaya@std.bogazici.edu.tr
+##2024100081
